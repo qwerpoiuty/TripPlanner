@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/tripPlanner');
+mongoose.connect('mongodb://localhost:27017/tripplanner');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'mongodb connection error:'));
 
@@ -18,20 +18,20 @@ var placeSchema = new Schema({
 
 var hotelSchema = new Schema({
 	name: String,
-	place: {type: Schema.Types.ObjectId, ref: 'Place'},
-	stars: {type: Number, min:1, max:5},
+	place:[placeSchema],
+	num_star: {type: Number, min:1, max:5},
 	ammenities: String //csv
 });
 
 var thingToDoSchema = new Schema({
 	name: String,
-	place: {type: Schema.Types.ObjectId, ref: 'Place'},
+	place:[placeSchema],
 	age_range: String
 });
 
 var restaurantSchema = new Schema({
 	name: String,
-	place: {type: Schema.Types.ObjectId, ref: 'Place'},
+	place: [placeSchema],//String,//{type: Schema.Types.ObjectId, ref: 'Place'},
 	cuisine: String, //csv
 	price: {type: Number, min: 1, max:5}
 });
