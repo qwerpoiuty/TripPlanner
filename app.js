@@ -7,6 +7,7 @@ var routes = require("./routes/");
 var server = app.listen(1234);
 
 app.engine("html",swig.renderfile);
+app.use('/',routes);
 app.set("view engine", "html");
 app.set("views", path.join(__dirname,"/views"));
 app.use(logger('dev'));
