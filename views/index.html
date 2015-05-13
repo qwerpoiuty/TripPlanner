@@ -1,12 +1,12 @@
 {% extends "layout.html" %}
 {% block content %}
-<div>
+<div class="container-fluid">
     <div class = "row">
-        <div class = "col col-lg-8">
+        <div class = "col col-lg-8 col-md-12 col-sm-12">
           <div id="map-canvas">
           </div>
         </div>
-            <div class = "col col-lg-4">
+            <div class = "col col-lg-4 col-md-6 col-sm-12 col-xs-12">
                 <div class="panel panel-default">
                     <div class = "row">
                         <div id = "selection" class = "panel-body">
@@ -47,15 +47,11 @@
                     </div>
                 </div>
         </div>
-        <div class = "col col-lg-4">
-
-                <div class = "panel panel-default">
-                    <h3 id = "itinerary">Itinerary</h3>
-                </div>
-
+        <div class = "col col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <div class = "panel panel-default">
+                <h3 id = "itinerary">Itinerary</h3>
+            </div>
         </div>
     </div>
-
 </div>
-
 {% endblock %}
