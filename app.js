@@ -1,15 +1,19 @@
-var app = require("express");
+var express = require("express");
 var logger = require("morgan");
 var parser = require("body-parser");
 var path = require("path");
 var swig = require("swig");
 var routes = require("./routes/");
+
+var app = express();
 var server = app.listen(1234);
 
-app.engine("html",swig.renderfile);
 app.use('/',routes);
+
+app.engine("html", swig.renderFile);
 app.set("view engine", "html");
 app.set("views", path.join(__dirname,"/views"));
+
 app.use(logger('dev'));
 app.use(parser.json());
 app.use(parser.urlencoded({extended: false}));

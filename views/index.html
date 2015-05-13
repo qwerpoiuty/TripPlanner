@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- Single button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    Action <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+  	{% for doc in docs %}
+    <li><a href="#">doc.name</a></li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}
