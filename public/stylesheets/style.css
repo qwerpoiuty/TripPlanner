@@ -1,12 +1,15 @@
 * {
   box-sizing: border-box; }
 
+select {
+  width: 50%; }
+
 #map-canvas {
   height: 87vh; }
 
 #selection {
-  padding-left: 40px;
-  padding-bottom: 20px; }
+  padding-left: 30px;
+  padding-bottom: 10px; }
 
 #itinerary {
   padding-left: 25px;
@@ -20,4 +23,12 @@
   float: left; }
 
 .navbar {
-  margin: 0; }
+  margin: 0;
+  background-color: #ababab; }
+
+.panel-heading {
+  background-color: #dddddd; }
+
+.btn-round {
+  border-radius: 20px;
+  background-color: #67a7ee; }
