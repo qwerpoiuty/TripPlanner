@@ -18,8 +18,8 @@ app.use(logger('dev'));
 app.use(parser.json());
 app.use(parser.urlencoded({extended: false}));
 
-app.use('/bower_components', express.static(path.join(__dirname, 'bower_components')))
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/bower_components', express.static(path.join(__dirname, 'bower_components')))
 
 app.use('/',routes);
 
