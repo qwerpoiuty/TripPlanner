@@ -1,14 +1,56 @@
 {% extends "layout.html" %}
 {% block content %}
-<!-- Single button -->
-<div class="btn-group">
-  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-    Action <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" role="menu">
-  	{% for doc in docs %}
-    <li><a href="#">doc.name</a></li>
-    {% endfor %}
-  </ul>
+<div>
+    <div class = "row">
+        <div class = "col col-lg-8">
+            HERE BE MAP
+        </div>
+            <div class = "col col-lg-4">
+                    <div class = "row">
+                       <h3>Select a hotel</h3>
+                       <select>
+                           {% for hotel in hotelList %}
+                           <option>{{hotel.name}}</option>
+                           {% endfor %}
+                       </select>
+                       <h3>Select a Restaurant</h3>
+                        <select>
+                            {% for restaurant in restList %}
+                            <option>{{restaurant.name}}</option>
+                            {% endfor %}
+                        </select>
+                        <h3>Select something to do</h3>
+                        <select>
+                            {% for thing in thingList %}
+                            <option>{{thing.name}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                <div class = "row">
+                <h3>Itenerary</h3>
+
+            </div>
+        </div>
+    </div>
+
 </div>
+
 {% endblock %}
+
+
+
+<!-- Single button -->
+<!--<div class="btn-group">-->
+  <!--<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">-->
+    <!--Action <span class="caret"></span>-->
+  <!--</button>-->
+  <!--<ul class="dropdown-menu" role="menu">-->
+  	<!--{% for doc in docs %}-->
+      <!--{{doc}}-->
+      <!--<!--<li>{{doc.name}}</li>-->
+    <!--{% endfor %}-->
+  <!--</ul>-->
+<!--</div>-->
+<!--<ul>-->
+
+<!--</ul>-->
