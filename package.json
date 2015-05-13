@@ -1,0 +1,27 @@
+{
+  "name": "TripPlanner",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "~1.12.4",
+    "express": "~4.12.3",
+    "morgan": "~1.5.3",
+    "swig": "~1.4.2",
+    "mongoose": "~4.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qwerpoiuty/TripPlanner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qwerpoiuty/TripPlanner/issues"
+  },
+  "homepage": "https://github.com/qwerpoiuty/TripPlanner"
+}
