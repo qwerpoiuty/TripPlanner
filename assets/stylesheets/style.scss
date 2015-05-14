@@ -38,3 +38,11 @@ select{
   border-radius: 20px;
   background-color: #67a7ee;
 }
+
+#daysList {
+  li{
+    display: inline;
+  }
+
+  list-style-type: none;
+}

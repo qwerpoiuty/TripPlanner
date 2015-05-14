@@ -32,3 +32,8 @@ select {
 .btn-round {
   border-radius: 20px;
   background-color: #67a7ee; }
+
+#daysList {
+  list-style-type: none; }
+  #daysList li {
+    display: inline; }
