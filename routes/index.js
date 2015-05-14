@@ -17,3 +17,22 @@ router.get('/', function(req,res,next){
 })
 
 module.exports = router;
+
+/*
+var async = require  async;
+router.get('/', function(req, res, next){
+    async.parallel({
+        hotels: function(done){
+            models.Hotel.find(done)
+        },
+        restaurants: function(done){
+    
+        },
+        thingsToDo: function(done){
+            
+        }
+    }, function(err, resultsHash){
+        res.json(resultsHash)
+    })
+})
+*/
